@@ -1,0 +1,14 @@
+{
+  "name": "accseo",
+  "scripts": {
+    "prod": "npx mix --production",
+    "watch": "npx mix watch",
+    "dev": "npx mix"
+  },
+  "devDependencies": {
+    "laravel-mix": "^6.0.43",
+    "resolve-url-loader": "^5.0.0",
+    "sass": "^1.51.0",
+    "sass-loader": "^12.6.0"
+  }
+}
