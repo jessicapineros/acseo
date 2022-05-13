@@ -80,6 +80,14 @@ img {
         bottom: 40px;
         z-index: -1;
     }
+
+    &--center {
+        text-align: center;
+
+        &::after {
+            
+        }
+    }
 }
 
 .section-block {
@@ -307,12 +315,16 @@ header {
 
     .content {
         background-color: $white;
-        margin-top: 60px;
+        margin: 60px 0 40px 0;
         position: relative;
         z-index: 1;
         padding: 100px 35px 35px;
         font-family: $font-secondary;
         border-radius: 20px;
+
+        @include media-breakpoint-up(lg) {
+            margin: 60px 0 0 0;
+        }
 
         .icon {
             width: 180px;
@@ -332,6 +344,44 @@ header {
             font-weight: 700;
             font-size: 1.75rem;
             margin-bottom: 10px;
+        }
+    }
+}
+
+.technologies {
+
+    .items {
+        justify-content: center;
+        flex-wrap: wrap;
+
+        @include media-breakpoint-up(lg) {
+            justify-content: space-between;
+            flex-wrap: nowrap;
+        }
+
+        .img {
+            padding: 20px;
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            @include media-breakpoint-up(lg) {
+                width: auto;
+
+                &:first-child {
+                    padding-left: 0;
+    
+                }
+    
+                &:last-child {
+                    padding-right: 0;
+                }
+            }
+
+            img {
+                max-width: 200px;
+            }
         }
     }
 }
