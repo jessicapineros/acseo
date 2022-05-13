@@ -4,66 +4,140 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acseo - expertise</title>
+    <title>Acseo - Expertise</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Raleway:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/dist/css/style.css">
 </head>
 <body>
     <header>
         <div class="container">
-            <a href="/" class="logo">
-                <img src="assets/dist/img/logo.svg" alt="logo">
-            </a>
-            <div class="menu">
-                <ul class="list-unstyled">
-                    <li>
-                        <a href="/expertises">Expertises</a>
-                    </li>
-                    <li>
-                        <a href="/expertises">Technologies & CMS</a>
-                    </li>
-                </ul>
-
+            <nav class="navbar">
+                <a href="/" class="logo">
+                    <img src="assets/dist/img/logo.svg" alt="logo">
+                </a>
+                <div class="menu-wrapper js-menu">
+                    <button class="btn close js-close" aria-label="fermer">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 20 20">
+                            <path d="M10 8.586l-7.071-7.071-1.414 1.414 7.071 7.071-7.071 7.071 1.414 1.414 7.071-7.071 7.071 7.071 1.414-1.414-7.071-7.071 7.071-7.071-1.414-1.414-7.071 7.071z"></path>
+                        </svg>
+                    </button>
+                    <ul class="menu">
+                        <li class="nav-item">
+                            <a href="/expertise" class="active nav-link">Expertises</a>
+                        </li>
+                        <li class="nav-item"> 
+                            <a href="/technologies" class="nav-link">Technologies & CMS</a>
+                        </li>
+                        <li class="nav-item"> 
+                            <a href="/projects" class="nav-link">Réalisations</a>
+                        </li>
+                        <li class="nav-item"> 
+                            <a href="/agencies" class="nav-link">Agences</a>
+                        </li>
+                        <li class="nav-item"> 
+                            <a href="/team" class="nav-link">Équipe</a>
+                        </li>
+                        <li class="nav-item"> 
+                            <a href="/blog" class="nav-link">Blog</a>
+                        </li>
+                    </ul>
+                    <a href="/contact" class="btn btn--primary">Contactez-nous</a>
+                </div>
+                <button type="button" class="btn btn-menu js-burger-menu">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 20 20" aria-title="menu">
+                        <path d="M0 3h20v2h-20v-2zM0 9h20v2h-20v-2zM0 15h20v2h-20v-2z"></path>
+                    </svg>
+                </button>
             </div>
         </div>
-
     </header>
-    <div class="page">
+    <div class="page-expertise">
         <section class="banner">
-            <div class="title">
-                <h1>UI/UX Desing </h1>
-                <h2>Un design attactif pour une experience réussie</h2>    
-            </div>
-        </section>
-        <section class="about">
-            <h2>Comment dfdf</h2>
-            <div>
-                <div class="content">
-                    <p>dfdsf</p>
-                    <p>dfdsf</p>
+            <div class="container">
+                <div class="banner-content p-4">
+                    <div class="title-container">
+                        <h1 class="title">UI/UX Desing </h1>
+                        <h2 class="subtitle">Un design attactif pour une experience réussie</h2>    
+                    </div>
+                    <div class="d-flex images">
+                        <img src="assets/dist/img/ronds.svg" alt="">
+                        <img src="assets/dist/img/image-banner.svg" alt="">
+                    </div>
+                    
                 </div>
-                <img src="" alt="">
             </div>
         </section>
-        <section class="services">
-            <div>
-
+        <section class="about section-block">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="content-wrapper">
+                            <h2 class="title-section">Commment mettre votre utilisateur au centre de la création&nbsp;?</h2>
+                            <div class="content mb-4">
+                                <p>Le design d’interaction est la manière dont le site va «communiquer» avec votre utilisateur final. L’objectif est que l’ensemble des visiteurs doivent comprendre, acheter, rentrer en communication simplement avec votre produit.</p>
+                                <p> C’est pour cela qu’ACSEO travaille avec une approche de «Design Thinking» qui met la technologie au service de l’utilisateur final et non le contraire.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="image">
+                            <img src="assets/dist/img/img-1.png" alt="">
+                        </div>
+                    </div>
+                </div>
             </div>
-
         </section>
+        <section class="services section-block">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="content">
+                            <div class="icon">
+                                <img src="assets/dist/img/icon-1.svg" alt="">
+                            </div>
+                            <h3 class="title text-center">Audit UX</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="content">
+                            <div class="icon">
+                                <img src="assets/dist/img/icon-1.svg" alt="">
+                            </div>
+                            <h3 class="title text-center">UX Design</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="content">
+                            <div class="icon">
+                                <img src="assets/dist/img/icon-1.svg" alt="">
+                            </div>
+                            <h3 class="title text-center">UI Design</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="technologies section-block">
+            <div class="container">
+                <h2 class="title-section">Logiciels utilisés</h2>
+            </div>
+        </section>
+
+
+
     </div>
     
-
-
-
-
     <footer>
 
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="assets/dist/js/app.js"></script>
 </body>
 </html>

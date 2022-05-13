@@ -1,8 +1,13 @@
 {
     "/assets/dist/js/app.js": "/assets/dist/js/app.js",
+    "/assets/dist/css/style.css": "/assets/dist/css/style.css",
     "/assets/dist/img/.DS_Store": "/assets/dist/img/.DS_Store",
-    "/assets/dist/img/ILLUS.svg": "/assets/dist/img/ILLUS.svg",
+    "/assets/dist/img/icon-1.svg": "/assets/dist/img/icon-1.svg",
+    "/assets/dist/img/icon-2.svg": "/assets/dist/img/icon-2.svg",
+    "/assets/dist/img/icon-3.svg": "/assets/dist/img/icon-3.svg",
+    "/assets/dist/img/image-banner.svg": "/assets/dist/img/image-banner.svg",
+    "/assets/dist/img/img-1.png": "/assets/dist/img/img-1.png",
+    "/assets/dist/img/img-2.png": "/assets/dist/img/img-2.png",
     "/assets/dist/img/logo.svg": "/assets/dist/img/logo.svg",
-    "/assets/dist/img/ronds.svg": "/assets/dist/img/ronds.svg",
-    "/assets/dist/css/style.css": "/assets/dist/css/style.css"
+    "/assets/dist/img/ronds.svg": "/assets/dist/img/ronds.svg"
 }
