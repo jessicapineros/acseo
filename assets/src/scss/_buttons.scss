@@ -1,0 +1,16 @@
+.btn {
+
+    &--primary {
+        color: $white;
+        background-color: $pink;
+        border-radius: 20px;
+        padding: 11px 24px;
+        font-weight: 700;
+        font-size: .875;
+
+        &:hover,
+        &:focus {
+            color: $white;
+        }
+    }
+}
