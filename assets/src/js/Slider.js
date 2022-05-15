@@ -1,11 +1,9 @@
-
 import $ from 'jquery';
 import 'slick-carousel';
 
 export class Slider {
     constructor() {
         this.slider = document.querySelector('.js-slider');
-
 
         if (this.slider) {
             this.init();
@@ -43,7 +41,7 @@ export class Slider {
                     dots: true,
                   }
                 }
-              ]
+            ]
         })
     }
 }

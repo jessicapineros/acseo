@@ -98,9 +98,11 @@ header {
 
             .menu {
                 display: block; 
+                margin-bottom: 30px;
 
                 @include media-breakpoint-up(lg) { 
                     display: flex;
+                    margin-bottom: 0;
                 }
             }
         }
