@@ -15,8 +15,7 @@
             background: $secondary;
             position: absolute;
             left: 0;
-            // bottom: 40px;
-            bottom: 0;
+            top: 22px;
             z-index: -1;
         }
     }
@@ -30,6 +29,16 @@
             &::after {
                 left: 50%;
                 transform: translateX(-50%);
+            }
+        }
+    }
+
+    &--big {
+        
+        span {
+
+            &::after {
+                top: 58px;
             }
         }
     }
