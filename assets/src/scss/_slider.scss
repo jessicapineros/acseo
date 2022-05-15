@@ -1,0 +1,118 @@
+.slider {
+
+    @include media-breakpoint-up(md) {
+        padding-left: 30px;
+    }
+    
+    @include media-breakpoint-up(lg) {
+        padding-left: 60px;
+    }
+
+    .slide {
+        max-height: 400px;
+        overflow: hidden;
+        padding-left: 20px;
+        margin-left: -1px;
+        position: relative;
+
+        &::after {
+            content: '';
+            width: calc(100% - 20px);
+            height: 100%;
+            position: absolute;
+            background-color: $black;
+            opacity: .2;
+            top: 0;
+            left: 20px;
+            z-index: -1;
+        }
+
+        .content {
+            color: $white;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px 20px 20px 40px;
+            z-index: 1;
+
+            .title {
+                font-size: 1.75rem;
+                font-weight: 800;
+                line-height: 32px;
+                margin-bottom: 10px;
+            }
+
+            .subtitle {
+                font-size: .875rem;
+            }
+
+            img {
+                width: auto;
+            }
+
+            .arrow-right {
+                background-color: transparent;
+                border: 1px solid $white;
+                border-radius: 100%;
+                width: 40px;
+                height: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                right: 20px;
+                bottom: 20px;
+            }
+        }
+    }
+}
+
+.slider-controls {
+    display: none;
+    justify-content: flex-end;
+    margin-top: -60px;
+    margin-bottom: 25px;
+
+    @include media-breakpoint-up(md) {
+        display: flex;
+    }
+
+    button {
+        background-color: $white;
+        border: 1px solid $darkGray;
+        border-radius: 100%;
+        width: 40px;
+        height: 40px;
+        margin: 10px;
+
+        &.next {
+            border-color: $pink;
+        }
+
+        &.prev {
+            transform: rotate(180deg);
+        }
+    }
+}
+
+.custom {
+    width: 550px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.slick-dots {
+    display: flex;
+    justify-content: center;
+
+    button {
+        width: 20px;
+        height: 20px;
+        border-radius: 100%;
+        color: $darkGray;
+        margin: 10px;
+        background-color: $darkGray;
+        border: 0;
+    }
+}

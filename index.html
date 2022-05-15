@@ -7,7 +7,7 @@
     <title>Acseo - Expertise</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Raleway:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Raleway:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/dist/css/style.css">
 </head>
 <body>
@@ -178,11 +178,75 @@
             <h2 class="title-section title-section--center">
                 <span>Quelques réalisations<br>en UI/UX design</span>
             </h2>
-            <div class="slider">
-                <img src="assets/dist/img/slider/img-1.png" alt="">
-                <img src="assets/dist/img/slider/img-2.png" alt="">
-                <img src="assets/dist/img/slider/img.png" alt="">
-
+            <div class="slider-controls">
+                <button class="prev">
+                    <svg width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.13163 2.09324H0.760336C0.342151 2.09324 0 2.50289 0 3.00358C0 3.50427 0.342151 3.91392 0.760336 3.91392H9.13163V5.54343C9.13163 5.95309 9.54221 6.15336 9.77792 5.86205L11.8917 3.3222C12.0361 3.14013 12.0361 2.85792 11.8917 2.67585L9.77792 0.136C9.54221 -0.155309 9.13163 0.054069 9.13163 0.45462V2.09324Z" fill="#d3d1d1"/>
+                    </svg>
+                </button>
+                <button class="next">
+                    <svg width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.13163 2.09324H0.760336C0.342151 2.09324 0 2.50289 0 3.00358C0 3.50427 0.342151 3.91392 0.760336 3.91392H9.13163V5.54343C9.13163 5.95309 9.54221 6.15336 9.77792 5.86205L11.8917 3.3222C12.0361 3.14013 12.0361 2.85792 11.8917 2.67585L9.77792 0.136C9.54221 -0.155309 9.13163 0.054069 9.13163 0.45462V2.09324Z" fill="#FF6D74"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="slider js-slider">
+                <div class="slide">
+                    <img src="assets/dist/img/slider/img-2.png" alt="">
+                    <div class="content">
+                        <img src="assets/dist/img/logo tf1.png" class="mb-4 d-block" alt="tf1">
+                        <img src="assets/dist/img/tv.png" class="mb-4 d-block" alt="tv">
+                        <p class="title">Site e-commerce</p>
+                        <p class="subtitle">Développement - Symfony - Angular - E-commerce</p>
+                        <button class="arrow-right">
+                            <svg width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.13163 2.09324H0.760336C0.342151 2.09324 0 2.50289 0 3.00358C0 3.50427 0.342151 3.91392 0.760336 3.91392H9.13163V5.54343C9.13163 5.95309 9.54221 6.15336 9.77792 5.86205L11.8917 3.3222C12.0361 3.14013 12.0361 2.85792 11.8917 2.67585L9.77792 0.136C9.54221 -0.155309 9.13163 0.054069 9.13163 0.45462V2.09324Z" fill="#fff"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="assets/dist/img/slider/img-1.png" alt="">
+                    <div class="content">
+                        <img src="assets/dist/img/logo tf1.png" class="mb-4 d-block" alt="tf1">
+                        <img src="assets/dist/img/tv.png" class="mb-4 d-block" alt="tv">
+                        <p class="title">Site e-commerce</p>
+                        <p class="subtitle">Développement - Symfony - Angular - E-commerce</p>
+                        <button class="arrow-right">
+                            <svg width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.13163 2.09324H0.760336C0.342151 2.09324 0 2.50289 0 3.00358C0 3.50427 0.342151 3.91392 0.760336 3.91392H9.13163V5.54343C9.13163 5.95309 9.54221 6.15336 9.77792 5.86205L11.8917 3.3222C12.0361 3.14013 12.0361 2.85792 11.8917 2.67585L9.77792 0.136C9.54221 -0.155309 9.13163 0.054069 9.13163 0.45462V2.09324Z" fill="#fff"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="assets/dist/img/slider/img-1.png" alt="">
+                    <div class="content">
+                        <img src="assets/dist/img/logo tf1.png" class="mb-4 d-block" alt="tf1">
+                        <img src="assets/dist/img/tv.png" class="mb-4 d-block" alt="tv">
+                        <p class="title">Site e-commerce</p>
+                        <p class="subtitle">Développement - Symfony - Angular - E-commerce</p>
+                        <button class="arrow-right">
+                            <svg width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.13163 2.09324H0.760336C0.342151 2.09324 0 2.50289 0 3.00358C0 3.50427 0.342151 3.91392 0.760336 3.91392H9.13163V5.54343C9.13163 5.95309 9.54221 6.15336 9.77792 5.86205L11.8917 3.3222C12.0361 3.14013 12.0361 2.85792 11.8917 2.67585L9.77792 0.136C9.54221 -0.155309 9.13163 0.054069 9.13163 0.45462V2.09324Z" fill="#fff"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="assets/dist/img/slider/img-2.png" alt="">
+                    <div class="content">
+                        <img src="assets/dist/img/logo tf1.png" class="mb-4 d-block" alt="tf1">
+                        <img src="assets/dist/img/tv.png" class="mb-4 d-block" alt="tv">
+                        <p class="title">Site e-commerce</p>
+                        <p class="subtitle">Développement - Symfony - Angular - E-commerce</p>
+                        <button class="arrow-right">
+                            <svg width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.13163 2.09324H0.760336C0.342151 2.09324 0 2.50289 0 3.00358C0 3.50427 0.342151 3.91392 0.760336 3.91392H9.13163V5.54343C9.13163 5.95309 9.54221 6.15336 9.77792 5.86205L11.8917 3.3222C12.0361 3.14013 12.0361 2.85792 11.8917 2.67585L9.77792 0.136C9.54221 -0.155309 9.13163 0.054069 9.13163 0.45462V2.09324Z" fill="#fff"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
             </div>
         </section>
         <section class="gray-block section-block">

@@ -1,5 +1,11 @@
 //import "bootstrap";
 import { Menu } from './Menu';
-console.log('jk')
+import { Slider } from './Slider';
 
-new Menu();
+
+
+document.addEventListener('DOMContentLoaded', () => {
+
+    new Menu();
+    new Slider();
+});
