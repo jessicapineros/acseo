@@ -1,5 +1,2 @@
 /node_modules
-/assets/dist/js/*
-/assets/dist/css/*
-/assets/dist/img/*
 .DS_Store
